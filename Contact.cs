@@ -28,6 +28,20 @@ class Program
     einstein.Address = "3718 MLK Blvd. Oakland, CA 94609";
 
     List<Contact> AddressBook = new List<Contact>() { hendrix, elvis, einstein };
+
+    Contact marie = new Contact();
+    marie.Name = "Marie Curie";
+    marie.Phone = "432-154-3523";
+    marie.Address = "1911 West 1st Ave. Fictional, OR 44556";
+
+    Contact janis = new Contact();
+    janis.Name = "Janis Joplin";
+    janis.Phone = "415-124-2445";
+    janis.Address = "Haight Ashbury, San Francisco, CA 94117";
+
+    AddressBook.Add(marie);
+    AddressBook.Add(janis);
+    
     foreach (Contact person in AddressBook)
     {
       Console.WriteLine("Name: " + person.Name);
